@@ -71,5 +71,11 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
         span.textContent = `By ${obj.authorName}`;
 
         //event listener to card item when clicked
+        card.addEventListener('click', () => {
+            console.log(obj.headline);
+        })
 
+        return card;
     }
+
+    cardContainer.appendChild(cardComponent());

@@ -59,6 +59,17 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
         imgContainer.classList.add('img-container');
 
         //structure
-        
+        imgContainer.appendChild(img);
+        author.appendChild(imgContainer);
+        author.appendChild(span);
+        card.appendChild(headline);
+        card.appendChild(author);
+
+        //content
+        headline.textContent = obj.headline;
+        img.src = obj.authorPhoto;
+        span.textContent = `By ${obj.authorName}`;
+
+        //event listener to card item when clicked
 
     }

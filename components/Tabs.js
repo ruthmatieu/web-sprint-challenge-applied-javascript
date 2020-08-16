@@ -33,3 +33,6 @@ function tabs(obj) {
 }    
 
 topics.appendChild(tabs());
+
+//stretch
+tabs.filter
